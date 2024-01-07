@@ -38,9 +38,3 @@ app.put('/api/comments/:id', (req, res) => {
 app.delete('/api/comments/:id', (req, res) => {
     res.send(req.params.id);
 });
-
-//PORT
-const port = process.env.PORT || 3000;
-
-//listen on port
-app.listen(port, () => console.log(`Listening on port ${port}`));
